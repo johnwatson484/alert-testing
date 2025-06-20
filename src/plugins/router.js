@@ -1,6 +1,7 @@
 import home from '../routes/home.js'
 import assets from '../routes/assets.js'
 import health from '../routes/health.js'
+import errors from '../routes/errors.js'
 
 const plugin = {
   name: 'router',
@@ -8,7 +9,8 @@ const plugin = {
     server.route([].concat(
       home,
       assets,
-      health
+      health,
+      errors
     ))
   },
 }

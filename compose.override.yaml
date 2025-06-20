@@ -12,6 +12,8 @@ services:
       - ./package.json:/home/node/package.json
     networks:
       - hapi-template
+    environment:
+      APPLICATIONINSIGHTS_CONNECTION_STRING: ${APPLICATIONINSIGHTS_CONNECTION_STRING}
 
 networks:
   hapi-template:
